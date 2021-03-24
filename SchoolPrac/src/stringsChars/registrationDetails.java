@@ -27,7 +27,7 @@ public class registrationDetails {
         String school = JOptionPane.showInputDialog("Enter your school");
         int grade = Integer.parseInt(JOptionPane.showInputDialog("Enter your grade"));
 
-        String details = name + "+" + lastName + "%" + idNumber + "%" + dateOfBirth + "%" + school + "%" + grade;
+        String details = name + "#" + lastName + "%" + idNumber + "%" + dateOfBirth + "%" + school + "%" + grade;
         infoFile.println(details);
         
         infoFile.close();
@@ -41,14 +41,14 @@ public class registrationDetails {
     public static void getRecord() throws FileNotFoundException { 
         Scanner file = new Scanner("C:\\Users\\CLLB19\\Documents\\NetBeansProjects\\SchoolPrac\\SchoolPrac\\src\\stringsChars\\Information.txt"); 
         
-        while(file.hasNextLine()){ 
+       while(file.hasNextLine()){ 
             String line = file.nextLine(); 
             Scanner lineScanner = new Scanner(line);
             lineScanner.useDelimiter("%"); 
             
             String names = lineScanner.next(); 
             Scanner namesScanner = new Scanner(names); 
-            namesScanner.useDelimiter("+"); 
+            namesScanner.useDelimiter("#"); 
             String name = namesScanner.next(); 
             String lastName = namesScanner.next(); 
             
@@ -61,6 +61,7 @@ public class registrationDetails {
             System.out.println("The name of the student is" + name);
             System.out.println("The last name of the student is" + lastName);
             System.out.println("The ID Number of the student is" + idNumber);
+            System.out.println("The date of birth of the student is" + dateOfBirth);
             System.out.println("The school the student goes to is" + school);
             System.out.println("The grade of the student is" + grade);
         }
