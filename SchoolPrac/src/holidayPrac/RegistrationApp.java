@@ -11,9 +11,9 @@ package holidayPrac;
  */
 public class RegistrationApp {
     public static void main(String[] args) {
-		Registration r = new Registration("C:\\Users\\CLLB19\\Documents\\NetBeansProjects\\SchoolPrac\\SchoolPrac\\src\\stringsChars\\Information.txt");
-		r.enterDetails();
-                r.printDetails();
+		RegistrationManager r = new RegistrationManager("C:\\Users\\CLLB19\\Documents\\NetBeansProjects\\SchoolPrac\\SchoolPrac\\src\\stringsChars\\Information.txt");
+		r.addStudent();
+                r.viewStudents();
 	}
 }
 

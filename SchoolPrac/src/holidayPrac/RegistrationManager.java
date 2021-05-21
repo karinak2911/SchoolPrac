@@ -14,17 +14,17 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 
-public class Registration {
-    private int numberOfStrudents;
+public class RegistrationManager {
+  
     private String logFilePath;
 
-    public Registration(String logFilePath) {
+    public RegistrationManager(String logFilePath) {
 
         this.logFilePath = this.logFilePath;
-  this.numberOfStrudents = 0; 
+ 
     }
 
-    public void enterDetails() {
+    public void addStudent() {
         String name = JOptionPane.showInputDialog("Enter your first name");
         String surname = JOptionPane.showInputDialog("Enter your last name");
         String idNumber = JOptionPane.showInputDialog("Enter your ID number");
@@ -35,6 +35,7 @@ public class Registration {
         Student s = new Student(name, surname, idNumber, dateOfBirth, school, grade);
 
         this.logStudent(s);
+       
 
     }
 
@@ -51,7 +52,7 @@ public class Registration {
 
     }
 
-    public void printDetails() {
+    public void viewStudents() {
         File f = new File(this.logFilePath);
         try {
 
