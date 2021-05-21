@@ -17,6 +17,10 @@ public class UseLine {
         steve.setLength(15); 
         steve.drawLine();
         System.out.println("Steve's length is " + steve.getLength());
+        
+        
+        CShape s = new CShape(); 
+        s.drawC();
     }
     
 }
