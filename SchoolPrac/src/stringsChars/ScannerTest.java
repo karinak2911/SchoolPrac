@@ -27,8 +27,8 @@ public class ScannerTest {
         String fullname = name + "#" + lastName; 
         
         try { 
-            PrintWriter p = new PrintWriter(new FileWriter("C:\\Users\\CLLB19\\Documents\\NetBeansProjects\\SchoolPrac\\SchoolPrac\\src\\stringsChars\\ScannerTest.txt"), true);
-            p.print(fullname); 
+            PrintWriter p = new PrintWriter(new FileWriter("C:\\Users\\CLLB19\\Documents\\NetBeansProjects\\SchoolPrac\\SchoolPrac\\src\\stringsChars\\ScannerTest.txt", true));
+            p.println(fullname); 
             p.close();
         } catch (IOException ex) {
             System.out.println("There was an error like my life");
