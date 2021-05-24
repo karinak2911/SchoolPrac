@@ -13,8 +13,18 @@ public class SubjectApp {
     public static void main(String[] args) {
         Subject english = new Subject();
         english.PrintArr();
-        english.SortArr();
+        english.SelectionSort();
+        
+       //english.ImprovedSelectionSort();
+        
+       //english.BubbleSort();
+       
+        //english.ImprovedBubbleSort();
         english.PrintArr();
+        
+        System.out.println(english.LinerSearch(7));
+        System.out.println(english.BinarySearch(6));
+         
     }
     
 }

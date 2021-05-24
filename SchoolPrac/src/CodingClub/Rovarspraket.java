@@ -3,19 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Callenges;
+package CodingClub;
+
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author CLLB19
  */
-public class SchoolPrac {
-
-    /**
-     * @param args the command line arguments
-     */
+public class Rovarspraket {
     public static void main(String[] args) {
-        // TODO code application logic here
+        String input = JOptionPane.showInputDialog("");
+        char lett = input.charAt(0);
+      
+            
+        
     }
-    
 }
