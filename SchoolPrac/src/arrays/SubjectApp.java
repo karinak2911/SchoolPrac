@@ -23,7 +23,7 @@ public class SubjectApp {
         english.PrintArr();
         
         System.out.println(english.LinerSearch(7));
-        System.out.println(english.BinarySearch(6));
+        System.out.println(english.BinarySearch(90));
          
     }
     

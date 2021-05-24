@@ -20,7 +20,7 @@ public class RegistrationManager {
 
     public RegistrationManager(String logFilePath) {
 
-        this.logFilePath = this.logFilePath;
+        this.logFilePath = logFilePath;
  
     }
 
